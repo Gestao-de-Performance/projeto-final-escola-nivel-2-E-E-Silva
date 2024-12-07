@@ -1,0 +1,373 @@
+:root{
+    --verde--10: #8A3033;
+    --verde--5: #ffffff;
+    --verde--15: #8DFFCD;
+    --verde-8: #68D89B;
+    --verde-12: #4F9D69;
+    --vermelho-10: #13020280;
+}
+
+body{
+    margin: 0;
+    font-size: large;
+    font-family: 'Times New Roman', serif;
+    color: #EADEDA;
+}
+
+.border{
+    border: solid var(--verde-8);
+}
+
+.scroll-to-top{
+    position: fixed;
+    top: 500px;
+    right: 50px; 
+    width: 50px; 
+    height: 50px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    border: none; 
+    border-radius: 50%;
+    text-align: center; 
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer; 
+    z-index: 1000; 
+    display: block;
+}
+
+/* Cabeça do Site apenas a parte superior */
+
+.menuMobile{
+    display: none;
+}
+
+.divHead{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--verde--10);
+    justify-content: space-around;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.section1{
+    display: flex;
+    margin: 0 160px 0 200px;
+    gap: 250px;
+    padding-top: 3%;
+}
+
+.nomesHeader{
+    font-size: large;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+}
+
+.corLink{
+    color: white;
+    text-decoration: none;
+}
+
+.ajusteLogo{
+    display: flex; 
+    justify-content: center;
+}
+
+/* Final Do Começo do Site */
+
+/* Main - Meio do site */
+
+main{
+    margin: 0;
+    background-color: var(--verde--10);
+}
+
+.prologoPagina{
+    margin: 0 100px 0 100px;
+    padding: 2rem 6rem ;
+    background-color: var(--verde--5);
+    color: black;
+}
+
+.centralizandoTitulos{
+    display: flex; 
+    justify-content: center;
+    font-weight: 900;
+}
+
+.centralizando{
+    margin: 8% 5%;
+}
+
+.menuResponsivo{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+}
+
+.motoResponsividade{
+    display: flex; 
+    justify-content: center;
+}
+
+.divPrincipalTituloImagem{
+    display: flex;
+    flex-direction: row;
+}
+
+.divTituloImagem{
+    padding-top: 3%;
+}
+
+.titulosMotos{
+    display: flex;
+    justify-content: center;
+}
+
+.alturaMotos{
+    height: 285px;
+}
+
+.motoCelular{
+    display: none;
+}
+
+.mainConteudo{
+    padding: 12%;
+    font-size: 100%;
+    font-weight: 600;
+    font-family: 'Times New Roman', serif;
+}
+
+.containerCapacete{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: black;
+    justify-content: center;
+}
+
+.capacetes{
+    background-color: var(--verde--10);
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    color: white;
+    transition: 1s;
+}
+
+.centerH2{
+    display: flex;
+    justify-content: center;
+}
+
+.capacetes:hover{
+    background-color: var(--vermelho-10);
+}
+
+.tituloMain{
+    display: flex;
+    align-items: center;
+}
+
+.containerVestuario{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* align-items: flex-end;  */
+}
+
+.vestuario{
+    background-color: var(--verde--10);
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    color: white;
+    transition: 1s;
+}
+
+.vestuario:hover{
+    background-color: var(--vermelho-10);
+}
+
+#Motos{
+    background-image: url("/imagensBackground/imagem-fundo.svg");
+    background-attachment: fixed;
+    
+}
+
+
+/* Final do Main */
+
+/* Começo Footer */
+
+footer{
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.containerFinal{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.containerInformacoes{
+    display: flex;
+    justify-content: center;
+}
+
+/* Começo da Responsividade */
+
+/* 1440 x 1264 */
+@media screen and (max-width: 1440px){
+    .section1 {
+        margin: 0 120px;
+        gap: 200px;
+    }
+
+    .prologoPagina {
+        padding: 1.5rem 4.5rem;
+    }
+
+    .mainConteudo {
+        padding: 10%;
+    }
+
+    .containerVestuario{
+        flex-wrap: wrap;
+    }
+
+    .divPrincipalTituloImagem{
+        flex-direction: column;
+    }
+}
+
+/* 1025 até 1325 */
+@media (min-width: 1025px) and (max-width: 1325px){
+    .containerCapacete{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .scroll-to-top{
+        display: none;
+    }
+}
+
+/* 1024 x 1080 */
+@media screen and (max-width: 1024px){
+    body{
+        margin: 0;
+        align-items: center;
+    }
+
+    .menuMobile{
+        display: block;
+        
+    }
+
+    .divLogo1 {
+        margin: 0;
+        background-color: var(--verde--10);
+    } 
+
+    .menuDesktop{
+        display: none;
+    }
+
+    .divLogo {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--verde--10);
+    }
+    
+    .section1 {
+        margin: 0 160px;
+        gap: 250px;
+    }
+
+    .prologoPagina {
+        padding: 2rem 6rem;
+    }
+
+    .mainConteudo {
+        padding: 12%;
+    }
+
+    .alturaMotos{
+        width: 50%;
+        height: 50%;
+    }
+
+    .containerCapacete,
+    .containerVestuario,
+    .divPrincipalTituloImagem {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .scroll-to-top{
+        display: none;
+    }
+}
+
+/* 767 x 1000 */
+@media screen and (max-width: 767px){
+
+    .section1 {
+        margin: 0 60px;
+        gap: 100px;
+        flex-direction: column;
+    }
+
+    #menuPodrao{
+        display: none;
+    }
+
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prologoPagina {
+        padding: 1rem 3rem;
+    }
+
+    .mainConteudo {
+        padding: 8%;
+    }
+
+    .containerCapacete,
+    .containerVestuario
+     {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scroll-to-top{
+        display: none;
+    }
+    
+    .containerFinal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .zerandoPadding{
+        padding: 0 0 0 0;
+    }
+   
+
+}
