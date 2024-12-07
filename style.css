@@ -37,6 +37,9 @@ body{
 }
 
 /* Cabeça do Site apenas a parte superior */
+.divLogo {
+    padding-top: 50px;
+}
 
 .menuMobile{
     display: none;
@@ -181,7 +184,7 @@ main{
     gap: 10px;
     flex-wrap: nowrap;
     align-items: center;
-    /* align-items: flex-end;  */
+    align-items: flex-end; 
 }
 
 .vestuario{
@@ -261,6 +264,7 @@ footer{
     .scroll-to-top{
         display: none;
     }
+    
 }
 
 /* 1024 x 1080 */
@@ -278,6 +282,7 @@ footer{
     .divLogo1 {
         margin: 0;
         background-color: var(--verde--10);
+        padding-bottom: 25px;
     } 
 
     .menuDesktop{
@@ -320,6 +325,24 @@ footer{
 
     .scroll-to-top{
         display: none;
+    }
+
+    .alinhamentoMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuButton {
+        width: 35px; 
+        height: 35px; 
+        background-image: url('imagensBackground/minimalista.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        cursor: pointer; 
+        margin-bottom: 30px;
     }
 }
 
@@ -368,6 +391,10 @@ footer{
     .zerandoPadding{
         padding: 0 0 0 0;
     }
-   
+
+    .prologoPagina {
+        margin-right: 0;
+        margin-left:  0;
+    }
 
 }
