@@ -92,6 +92,7 @@ main{
     padding: 2rem 6rem ;
     background-color: var(--verde--5);
     color: black;
+    min-height: 220px;
 }
 
 .centralizandoTitulos{
@@ -200,7 +201,9 @@ main{
 #Motos{
     background-image: url("/imagensBackground/imagem-fundo.svg");
     background-attachment: fixed;
-    
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: 40px;
 }
 
 
@@ -236,6 +239,7 @@ footer{
 
     .prologoPagina {
         padding: 1.5rem 4.5rem;
+        min-height: 220px;
     }
 
     .mainConteudo {
@@ -249,6 +253,15 @@ footer{
     .divPrincipalTituloImagem{
         flex-direction: column;
     }
+
+    #Motos{
+        background-image: url("/imagensBackground/imagem-fundo.svg");
+        background-attachment: fixed;
+        background-size: 170%;
+        background-repeat: no-repeat;
+        background-position: 40px;
+    }
+    
 }
 
 /* 1025 até 1325 */
@@ -301,6 +314,7 @@ footer{
 
     .prologoPagina {
         padding: 2rem 6rem;
+        min-height: 320px;
     }
 
     .mainConteudo {
@@ -341,6 +355,14 @@ footer{
         cursor: pointer; 
         margin-bottom: 30px;
     }
+
+    #Motos{
+        background-image: url("/imagensBackground/imagem-fundo.svg");
+        background-attachment: fixed;
+        background-size: 170%;
+        background-repeat: no-repeat;
+        background-position: 40px;
+    }
 }
 
 /* 767 x 1000 */
@@ -363,6 +385,9 @@ footer{
 
     .prologoPagina {
         padding: 1rem 3rem;
+        min-height: 520px;
+        margin-right: 0;
+        margin-left:  0;
     }
 
     .mainConteudo {
@@ -389,9 +414,11 @@ footer{
         padding: 0 0 0 0;
     }
 
-    .prologoPagina {
-        margin-right: 0;
-        margin-left:  0;
+    #Motos{
+        background-image: url("tem que ser outra imagem");
+        background-attachment: fixed;
+        background-size: 170%;
+        background-position: 40px;
     }
 
 }

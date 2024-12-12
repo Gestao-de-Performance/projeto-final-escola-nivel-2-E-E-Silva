@@ -12,7 +12,7 @@ function chamaMenu(){
 window.addEventListener('scroll', () => {
     const moto = document.getElementById('Motos');
     const scroll = window.scrollY;
-    moto.style.backgroundPosition = `${scrollY * 0.1}px top`
+    moto.style.backgroundPosition = `${scrollY * -0.2}px top`
 
 })
 
