@@ -92,7 +92,7 @@ main{
     padding: 2rem 6rem ;
     background-color: var(--verde--5);
     color: black;
-    min-height: 220px;
+    min-height: 170px;
 }
 
 .centralizandoTitulos{
@@ -314,7 +314,7 @@ footer{
 
     .prologoPagina {
         padding: 2rem 6rem;
-        min-height: 320px;
+        min-height: 290px;
     }
 
     .mainConteudo {
@@ -365,6 +365,7 @@ footer{
     }
 }
 
+
 /* 767 x 1000 */
 @media screen and (max-width: 767px){
 
@@ -385,7 +386,7 @@ footer{
 
     .prologoPagina {
         padding: 1rem 3rem;
-        min-height: 520px;
+        min-height: 500px;
         margin-right: 0;
         margin-left:  0;
     }
