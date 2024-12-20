@@ -415,10 +415,15 @@ footer{
         padding: 0 0 0 0;
     }
 
+
+
+}
+
+@media screen and (max-width: 768px) {
     #Motos{
-        background-image: url("tem que ser outra imagem");
+        background-image: url("/imagensBackground/mobileBackground.svg");
         background-attachment: fixed;
-        background-size: 170%;
+        background-size: 280%;
         background-position: 40px;
     }
 
